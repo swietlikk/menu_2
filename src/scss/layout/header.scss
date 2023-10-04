@@ -1,0 +1,11 @@
+@import "../utils/functions";
+
+.header {
+  box-shadow: 0 px-to-rem(8px) px-to-rem(24px) 0 rgba(66, 68, 90, 1);
+  &__inner {
+    width: 100%;
+    max-width: px-to-rem(960px);
+    margin-inline: auto;
+    padding-inline: px-to-rem(15px);
+  }
+}

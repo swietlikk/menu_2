@@ -1,1 +1,10 @@
 @import "../../node_modules/normalize.css/normalize";
+
+@import "./global";
+
+// layout
+@import "./layout/header";
+
+// components
+@import "./components/logo";
+@import "./components/navigation";
