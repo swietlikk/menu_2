@@ -4,6 +4,9 @@
 .navigation {
   align-self: flex-end;
   @include flex(flex-end);
+  @media screen and (max-width: px-to-rem(720px)) {
+    display: none;
+  }
   &__item {
     font-family: 'Roboto Light', sans-serif;
     padding: px-to-rem(10px) px-to-rem(20px);
