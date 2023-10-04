@@ -1,3 +1,5 @@
+@import "../variables";
+
 @mixin flex($horizontal: flex-start, $vertical: flex-start, $wrap: nowrap){
   display: flex;
   justify-content: $horizontal;
@@ -25,4 +27,13 @@
       @content;
     }
 
+}
+
+@mixin font-face($font-name,$font-file){
+  @font-face {
+    font-family: $font-name;
+    src: url('#{$font-path}/#{$font-file}.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
 }
