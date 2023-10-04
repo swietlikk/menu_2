@@ -319,6 +319,19 @@ html, body {
   max-width: 60rem;
   margin-inline: auto;
   padding-inline: 0.9375rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  overflow: hidden;
+  text-indent: -999px;
 }
 
 /*# sourceMappingURL=main.css.map */
