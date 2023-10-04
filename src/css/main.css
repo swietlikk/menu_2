@@ -311,6 +311,18 @@ html, body {
   font-size: 16px;
 }
 
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../fonts/roboto-light-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 .header {
   box-shadow: 0 0.5rem 1.5rem 0 rgb(66, 68, 90);
 }
@@ -320,6 +332,10 @@ html, body {
   margin-inline: auto;
   padding-inline: 0.9375rem;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: nowrap;
 }
 
 .logo {
@@ -332,6 +348,43 @@ html, body {
   margin-bottom: 0.625rem;
   overflow: hidden;
   text-indent: -999px;
+}
+
+.navigation {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: nowrap;
+}
+.navigation__item {
+  font-family: "Roboto Light", sans-serif;
+  padding: 0.625rem 1.25rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 200ms ease-in-out;
+}
+.navigation__item:first-child {
+  border-top-left-radius: 0.25rem;
+}
+.navigation__item:last-child {
+  border-top-right-radius: 0.25rem;
+}
+.navigation__item:link {
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.9);
+}
+.navigation__item:visited {
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.9);
+}
+.navigation__item:hover, .navigation__item--current {
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.9);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.navigation__item:active {
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.9);
 }
 
 /*# sourceMappingURL=main.css.map */

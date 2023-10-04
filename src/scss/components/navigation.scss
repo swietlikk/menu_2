@@ -1,9 +1,27 @@
+@import "../utils/functions";
+@import "../utils/mixins";
+
 .navigation {
+  align-self: flex-end;
+  @include flex(flex-end);
   &__item {
-
-    &__item--current {
-
+    font-family: 'Roboto Light', sans-serif;
+    padding: px-to-rem(10px) px-to-rem(20px);
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .7);
+    transition: all 200ms ease-in-out;
+    &:first-child {
+      border-top-left-radius: px-to-rem(4px);
     }
+    &:last-child {
+      border-top-right-radius: px-to-rem(4px);
+    }
+    @include link(white, rgba(0, 0, 0, .7)) {
+      border-bottom: px-to-rem(2px) solid rgba(0, 0, 0, .9);
+    };
+
   }
   &__highlight {
 
